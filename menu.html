@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Flying Burger: Menu</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="includes/modernizr.js" type="text/javascript"></script>
+    <script src="https://use.fontawesome.com/1c938c3028.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><i class="fa fa-bars" aria-hidden="true"></i>
+                    <ul>
+                        <li><a href="index.html" title="Home">Home</a></li>
+                        <li><a href="menu.html" title="Menu">Menu</a></li>
+                        <li><a href="about.html" title="About">About</a></li>
+                        <li><a href="contact.html" title="Contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <canvas id="menuCan" width="800" height="200">
+            <p>Our burgers are so good they grow wings and sing like Angels.</p>
+        </canvas>
+        <h1>Menu</h1>
+        <a href="#pics" title="Pictures" class="small">We know everyone likes taking pictures of their food. So here are some of ours</a>
+        <section>
+            <h2>Burgers</h2>
+            <h3>The Classic Cheese</h3>
+            <p>Everyone knows this burger. Half a pound of beef, cheese, onion, pickle, lettuce, tomato, and a bun.</p>
+            <h3>The Bacon Monster</h3>
+            <p>The Classic Cheese with a lot, we mean a lot, of bacon.</p>
+            <h3>The Cheddar Surprise</h3>
+            <p>Big hunks of Cheddar cheese mixed into the ground beef for cheesey awesomeness.</p>
+            <h3>The Flying Burger</h3>
+            <p>One pound of beef, wrapped in bacon, cheddar cheese and all the toppings we can think of.</p>
+            <h3>The Chicken Classic Cheese</h3>
+            <p>The Classic Cheese with the beef substituted for BBQ Chicken breast</p>
+        </section>
+        <section>
+            <h2>Sides</h2>
+            <h3>Tried and True Classics</h3>
+            <p>Fries, Onion Rings, Cheese Fries, Fried Pickles, Popcorn Chicken, Bacon and Beef Nachos</p>
+            <h3>A Little More On the Boring Side</h3>
+            <p>Chips, Fruit Salad, Cole Slaw</p>
+        </section>
+        <section>
+            <h2>Drinks</h2>
+            <h3>The Carbonated Stuff</h3>
+            <p>Soda, Orange Soda, Dr. Pub, Hilly Mist</p>
+            <h3>The Others</h3>
+            <p>Coffee, Ice Tea, Water, ElectroDrink</p>
+        </section>
+        <section>
+            <h2>Shakes</h2>
+            <h3>The Regular Suspects</h3>
+            <p>Chocolate, Vanilla, Strawberry, Cookie Creature, Minty, PB and Chocolate</p>
+        </section>
+        <div id="pics">
+            <div class="imgView">
+                <span class="prev">&lt;</span>
+                <img src="images/logo.png" alt="Large Image" class="viewer"/>
+                <span class="next">&gt;</span>
+            </div>
+            <ul class="imgGal">
+                <li class="selected"><img src="images/burger.jpeg" alt="Burger Picture"/></li>
+                <li><img src="images/burger2.jpeg" alt="Burger Picture"/></li>
+                <li><img src="images/burger3.jpg" alt="Burger Picture"/></li>
+                <li><img src="images/fries.jpeg" alt="Fries Picture"/></li>
+                <li><img src="images/shake.jpeg" alt="Shake Picture"/></li>
+            </ul>
+        </div>
+        <div class="modal">
+            <div class="modalView">
+                <img src="images/burger2.jpeg" title="Large Image" alt="img viewer"/>
+            </div>
+        </div>
+        <canvas id="canLogo" height="150" width="200">
+            The Flying Burger is totally rad.
+        </canvas>
+    </main>
+    <img src="images/logo.png" id="logoHide" alt="logo"/>
+    <script src="js/canvas.js"></script>
+</body>
+</html>

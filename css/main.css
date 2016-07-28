@@ -1,0 +1,330 @@
+/*
+Daniel Cobb
+WIA The Project
+July 27,2016
+
+*/
+
+body{
+    max-width:2000px;
+    font:12pt/normal 'Helvetica', 'Arial', sans-serif;
+    padding:0;
+    margin: 0 auto;
+    background: #2ea8ed;
+    color:#fff;
+}
+/*----- General Styles -----*/
+header{
+    position:fixed;
+    padding:2%;
+    z-index: 10;
+}
+main{
+    width:100%;
+    height:800px;
+    padding:0;
+    margin: 0 auto;
+}
+section{
+    width:80%;
+    padding:2%;
+    margin:0 auto;
+}
+canvas{
+    margin:0 auto;
+    display:block;
+}
+h1{
+    text-align: center;
+    font-size:5em;
+    font-family: 'Amatic SC', cursive;
+    position:absolute;
+    left:46%;
+    top:50px;
+}
+h2{
+    text-align: center;
+    font-size:3em;
+    font-family: 'Amatic SC', cursive;
+    border-bottom: 2px solid rgb(218, 198, 52);
+}
+video{
+    padding:0;
+    margin:0 auto;
+    object-fit: fill;
+}
+a .fa{
+    font-size:3em;
+    color: #fff;
+    transition-duration: 700ms;
+}
+/* Hover effect listed under nav, same effect as nav menu*/
+
+/*----- Nav -----*/
+nav ul{
+    display:none;
+    font-weight:700;
+    font-size:2em;
+    padding:0;
+}
+nav ul li{
+    list-style-type: none;
+    margin:0;
+    text-indent: 0;
+}
+nav li ul li{
+    display:none;
+    transition-duration: 500ms;
+}
+nav ul li a{
+    text-decoration: none;
+    color:inherit;
+}
+nav ul li:hover ul li{
+    display:block;
+}
+nav li ul li:hover, a:hover .fa{
+    cursor: pointer;
+    color:#D64541;
+}
+nav ul li ul{
+    font-size:1em;
+}
+/*----- Used for Small <a> -----*/
+.small{
+    text-decoration: none;
+    color:inherit;
+    font-size:.75em;
+    display: block;
+    text-align: center;
+}
+/*----- Logo used on Home Page -----*/
+#logo{
+    margin: 2% 40%;
+    display: none;
+}
+/*----- Car positioning -----*/
+#car, #car3{
+    position: absolute;
+    bottom:100px;
+    left:-500px;
+}
+#car2{
+    position: absolute;
+    bottom:225px;
+    left:110%;
+}
+/*----- CTA -----*/
+#cta{
+    position: relative;
+    max-width:100%;
+    height:800px;
+    padding:0;
+    margin: 0 auto;
+    background: url('../images/burgerjoint.png') top center no-repeat;
+    background-size:cover;
+    overflow:hidden;
+}
+
+
+/*----- Image Gallery -----*/
+#pics{
+    margin:5% auto 2%;
+}
+#pics .imgGal{
+    width:76%;
+    padding:2%;
+    margin:0 auto;
+    text-align: center;
+    list-style-type: none;
+    background:rgba(0,0,0,.3);
+}
+.imgView{
+    width:76%;
+    padding:2%;
+    margin:0 auto;
+    text-align: center;
+    background:rgba(0,0,0,.3);
+    border-radius:10px 10px 0 0;
+    position:relative;
+}
+.imgView span{
+    font-size:5em;
+    font-family:'Amatic SC';
+    position:absolute;
+}
+.imgView span:hover{
+    cursor: pointer;
+}
+.imgView span:first-of-type{
+    top:40%;
+    left:10%;
+}
+.imgView span:nth-of-type(2){
+    top:40%;
+    left:90%;
+}
+
+.imgGal li{
+    display:inline-block;
+    margin:0 auto;
+    text-indent: 0;
+    width:15%;
+    height:100px;
+    padding:2%;
+}
+.imgGal li img{
+    width:100%;
+    height:100px;
+    border-radius: 0 20px 0 0;
+}
+.imgGal li img:hover, .imgView img:hover{
+    cursor: pointer;
+}
+.selected{
+    border:2px solid rgb(218, 198, 52);
+}
+.imgView img{
+    max-width:50%;
+    height:300px
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    width:100%;
+    background:rgba(0,0,0,.7);
+    z-index:10;
+    top:0;
+    left:0;
+}
+.modalView{
+    width:60%;
+    height:auto;
+    margin:5% auto 0;
+}
+.modalView img{
+    width:100%;
+    border:5px solid #fff;
+}
+
+/*----- Ratings Chart -----*/
+#ratings{
+    width:25%;
+    margin:0 auto;
+    text-align: center;
+    height:500px;
+    position: relative;
+}
+#ratings span{
+    position: absolute;
+    bottom:0;
+    margin:0;
+    width:50px;
+    display:none;
+    border-radius: 0 10px 0 0;
+}
+#ratings span:nth-of-type(5)::after{
+    content:'43';
+}
+#ratings span:nth-of-type(4)::after{
+    content:'30';
+}
+#ratings span:nth-of-type(3)::after{
+    content:'21';
+}
+#ratings span:nth-of-type(2)::after{
+    content:'4';
+}
+#ratings span:nth-of-type(1)::after{
+    content:'2';
+}
+
+#ratings span[data-rate="43"]::before{
+    content:'5 Stars!';
+    position: absolute;
+    bottom:0;
+    left:0;
+    display:block;
+    width:50px;
+    height:50px;
+    transform: rotate(-45deg);
+}
+
+/*----- About page -----*/
+img[alt="Grill"]{
+    width:50%;
+    border-radius:60%;
+    margin:0 25%;
+}
+/*----- Contact Page -----*/
+
+.centered{
+    text-align: center;
+}
+/*----- Footer -----*/
+#logoHide{
+    display:none;
+}
+
+@media screen and (max-width:600px){
+    #cta{
+        height:400px;
+        background-size:100% 100%;
+    }
+    #logo{
+        width:25%;
+    }
+    #car, #car2, #car3{
+        width:30%;
+    }
+    #car, #car3{
+        bottom:75px;
+        left:-200px;
+    }
+    #car2{
+        bottom:125px;
+    }
+    main{
+        height: auto;
+    }
+    canvas, #ratings{
+        max-width:100%;
+    }
+    #ratings span{
+        width:30px;
+        margin-left:-100px;
+    }
+    h1{
+        top:-70px;
+    }
+    video{
+        height:300px;
+    }
+}
+@media screen and (max-width:350px){
+    #logo{
+        width:30%;
+    }
+    #car, #car2, #car3{
+        width:35%;
+    }
+    #car, #car3{
+        bottom:75px;
+        left:-125px;
+    }
+    #car2{
+        bottom:125px;
+    }
+    .imgView img{
+        height:200px;
+    }
+    h1{
+        top:-70px;
+        left:20%;
+    }
+    .imgGal li img, .imgGal li{
+        height:50px;
+    }
+
+}

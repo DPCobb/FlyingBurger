@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Flying Burger: About Us</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="includes/modernizr.js" type="text/javascript"></script>
+    <script src="https://use.fontawesome.com/1c938c3028.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><i class="fa fa-bars" aria-hidden="true"></i>
+                    <ul>
+                        <li><a href="index.html" title="Home">Home</a></li>
+                        <li><a href="menu.html" title="Menu">Menu</a></li>
+                        <li><a href="about.html" title="About">About</a></li>
+                        <li><a href="contact.html" title="Contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <canvas id="menuCan" width="800" height="200">
+            <p>Our burgers are so good they grow wings and sing like Angels.</p>
+        </canvas>
+        <h1>About</h1>
+        <section>
+            <img src="images/grill.jpg" alt="Grill"/>
+            <h2>We're just a couple of dudes with a passion for grilling</h2>
+            <p>It all started in the summers around the grill. We cooked, drank, and had fun. One day
+                someone had the awesome idea of starting a burger joint. Our food was the greatest
+                thing to ever happen to a grill, so why not right?</p>
+
+            <p> Welcome to a place where the burger is king and everyone obeys its deliciousness. Come in, have fun,
+                eat until you explode, whatever you do try our burgers. You won't be disappointed... just look below
+                this is for real. Love our burgers you will. Don't worry about those one star reviews, they are from
+                some hippies who wanted some craziness called black bean burgers, I don't know either.</p>
+
+            <p> Alright burger bruhs and gals, we'll see you soon.</p>
+        </section>
+
+        <section>
+            <h2>Stars... we have them all.</h2>
+            <p class="small">But most of them are 5 stars, so that's cool</p>
+            <div id="ratings">
+                <span class="star" data-rate="2"></span>
+                <span class="star" data-rate="4"></span>
+                <span class="star" data-rate="21"></span>
+                <span class="star" data-rate="30"></span>
+                <span class="star" data-rate="43"></span>
+            </div>
+        </section>
+
+        <canvas id="canLogo" height="150" width="200">
+            The Flying Burger is totally rad.
+        </canvas>
+    </main>
+    <img src="images/logo.png" id="logoHide" alt="logo"/>
+    <script src="js/canvas.js"></script>
+</body>
+</html>
